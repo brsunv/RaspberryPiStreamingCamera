@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Raspberry Pi Cam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/player.css">
+  </head> 
+  <body> 
+  
+	<div id="videos">
+		<div id="video-main">			
+			<video id="vid_main" autoplay></video>			
+		</div>		
+		<div id="controls">
+			<select id="audiosrc"></select>
+			<select id="videosrc"></select>
+			<br/>		
+			<button id="msg-btn">Send</button>
+			<input id="msg" />			
+			<br/>
+			<textarea id="log" readonly="readonly"></textarea>
+		</div>		
+	</div>	
+
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+	<script src="assets/js/peer.min.js"></script>
+	<script src="assets/js/adapter.js"></script>
+    <script src="assets/js/player.js"></script>
+    <script>
+        var u_id = $.urlParam('id');
+		var peer;
+    </script>
+</html>
